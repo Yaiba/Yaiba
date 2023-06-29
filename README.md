@@ -1,6 +1,5 @@
 ### Hi this is Yaiba 👋
 
-![Yaiba's GitHub stats](https://github-readme-stats.vercel.app/api?username=Yaiba)
 
 ![](https://raw.githubusercontent.com/Yaiba/Yaiba/output/github-contribution-grid-snake.svg)
 
@@ -17,4 +16,7 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
+
+
+![Yaiba's GitHub stats](https://github-readme-stats.vercel.app/api?username=Yaiba)
 -->
