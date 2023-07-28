@@ -33,10 +33,22 @@ jobs:
 
       # push the content of <build_dir> to a branch
       # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
-      - name: Push to GitHub
-        uses: EndBug/add-and-commit@v7.2.1
+#       - name: Push to GitHub
+#         uses: EndBug/add-and-commit@v7.2.1
+#         with:
+#           branch: output
+#           author_name: yaiba-bot
+#           author_email: bot@yaiba
+#           message: 'Generate Contribution Snake'     
+                  
+      - name: Commit files
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -a -m "Generate Contribution Snake"
+          
+      - name: Push changes
+        uses: ad-m/github-push-action@master
         with:
-          branch: output
-          author_name: yaiba-bot
-          author_email: bot@yaiba
-          message: 'Generate Contribution Snake'     
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: output    
