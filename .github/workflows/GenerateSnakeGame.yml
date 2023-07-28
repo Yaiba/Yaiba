@@ -47,6 +47,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add ./assets
           git commit -a -m "Generate Contribution Snake"
+          git push origin main:output
           
       - name: Push changes
         uses: ad-m/github-push-action@master
