@@ -33,11 +33,17 @@ jobs:
 
       # push the content of <build_dir> to a branch
       # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
-      - name: Push to GitHub
-        uses: EndBug/add-and-commit@v9
+#       - name: Push to GitHub
+#         uses: EndBug/add-and-commit@v9
+#         with:
+#           add: './assets'
+#           branch: 'output'
+#           message: 'Generate Contribution Snake'     
+# #           push: "origin yourBranchName --set-upstream --force"
+  
+      - name: Commit & Push changes
+        uses: actions-js/push@v1.4
         with:
-          add: './assets'
-          branch: 'output'
-          message: 'Generate Contribution Snake'     
-#           push: "origin yourBranchName --set-upstream --force"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: "output"
 
