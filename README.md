@@ -1,7 +1,7 @@
 ### Hi this is Yaiba 👋
 
 
-![](https://raw.githubusercontent.com/Yaiba/Yaiba/output/github-contribution-grid-snake.svg)
+![](https://raw.githubusercontent.com/Yaiba/Yaiba/output/assets/github-contribution-grid-snake.svg)
 
 <!--
 **Yaiba/Yaiba** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
