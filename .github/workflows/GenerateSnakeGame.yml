@@ -39,5 +39,5 @@ jobs:
           add: './assets'
           new_branch: 'output'
           message: 'Generate Contribution Snake'     
-#           push: "origin yourBranchName --set-upstream --force"
+          push: "origin output --set-upstream --force"
 
